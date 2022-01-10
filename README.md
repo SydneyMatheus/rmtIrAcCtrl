@@ -2,6 +2,7 @@
 This is a simple code using RMT (Remote Control) module driver to send infrared remote control signals to the air conditioner.
 
 I was developing a code in my spare time in Arduino IDE to control the air conditioning (AC) using infrared sensor (IR) with a ESP32, however when completing the task, as I was using some peripherals (screen and button, in addition the IR) plus the delays within the code, I decided to use threads to organize better the execution time of each task and that experience has not been good in the Arduino IDE. Changing platform I ended up downloading the ESP-IDF 4.3v where I was able to run the codes without a problem and use the threads.
+
 Rewriting from Arduino IDE to ESP-IDF some doubts were raised, since I wouldn’t use the same Arduino libraries, and specifically in the IR library I didn’t find any simple and easy content like in Arduino IDE libraries. From that came the motivation to try to understand the RMT module which from what I’ve been seeing was the most used for things like that on ESP-IDF.
 
 ## Little Guide
